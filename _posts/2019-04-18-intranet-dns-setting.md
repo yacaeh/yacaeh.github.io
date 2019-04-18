@@ -11,13 +11,13 @@ categories: server
 
 2. 호스트 네임 설정
 `sudo nano /etc/hosts`
-```[요청IP]		주소명
-ex)192.168.124.202	file.ycs.com```
+[요청IP]		주소명
+`ex)192.168.124.202	file.ycs.com`
 
 `sudo nano /etc/hostnames`
-```[호스트명]
+[호스트명]
 ex)
-file.ycs.com```
+`file.ycs.com`
 
 
 3. Bind9 이용 주소 매핑
@@ -49,8 +49,8 @@ git.ycs.com.	IN	A	192.168.124.201
 `sudo nano /etc/bind/db.124.168.192  //IP주소 마지막 클래스 자리를 제외한 나머지 역순으로`
 PTR 레코드에 주소 추가
 
-```200 IN PTR ycs.com.  //뒤에 . 에 유의
-201 IN PTR git.ycs.com.```
+`200 IN PTR ycs.com.  //뒤에 . 에 유의
+201 IN PTR git.ycs.com.`
 
 4)설정적용
 `sudo service bind9 restart`
