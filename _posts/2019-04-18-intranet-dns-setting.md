@@ -6,27 +6,27 @@ categories: server
 
 네임서버 운영 매뉴얼
 
-1. IP 할당 -> 가상 네트워크 드라이브 추가\
+1. IP 할당 -> 가상 네트워크 드라이브 추가
 우분투 콘솔 이용 할당
 
-2. 호스트 네임 설정\
-`sudo nano /etc/hosts`\
+2. 호스트 네임 설정
+`sudo nano /etc/hosts`
 
-[요청IP]		주소명\
-`ex)192.168.124.202	file.ycs.com`\
+[요청IP]		주소명
+`ex)192.168.124.202	file.ycs.com`
 
-`sudo nano /etc/hostnames`\
+`sudo nano /etc/hostnames`
 
-[호스트명]\
-`ex)file.ycs.com`\
+[호스트명]
+`ex)file.ycs.com`
 
 
-3. Bind9 이용 주소 매핑\\
+3. Bind9 이용 주소 매핑
 
-  0) 설치 \
+  0) 설치 
 `sudo apt-get install -y Bind9`
 
-  1)zone 추가\
+  1)zone 추가
 
 `sudo nano /etc/bind/named.conf.local`
 
