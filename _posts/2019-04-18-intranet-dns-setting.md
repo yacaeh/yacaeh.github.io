@@ -6,6 +6,17 @@ categories: server
 
 네임서버 운영 매뉴얼
 
+클라이언트 DNS 주소 변경
+
+아래를 배치파일로 만들어 관리자로 실행
+`netsh interface ip set dns "이더넷" static 192.168.124.200
+netsh interface ip show config
+
+SET /P P=아무키나 누르세요...`
+
+
+서버 세팅
+
 1. IP 할당 -> 가상 네트워크 드라이브 추가
 우분투 콘솔 이용 할당
 
